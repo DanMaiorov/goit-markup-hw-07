@@ -3,25 +3,22 @@
   padding-bottom: 94px;
 }
 
-.feature-list {
+.feature__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 1170px;
   .title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 0.03em, 700);
   text-transform: uppercase;
   }
   .text {
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 1.71);
   }
 }
 
-.feature-item {
+.feature__item {
   display: block;
   width: 270px;
   background-color: var(--button-color);
@@ -30,14 +27,14 @@
   }
 }
 
-.feature-div-icon {
+.feature__block {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 120px;
 }
 
-.feature-item-text {
+.feature__item-text {
   padding-top: 30px;
   background-color: var(--secondary-text-color);
 }

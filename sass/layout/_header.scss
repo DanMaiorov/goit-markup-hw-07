@@ -3,57 +3,32 @@
   border: 1px solid var(--header-border-color);
 }
 
-/* лого */
-
-.header-logo,
-.footer-logo {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  .accent {
-  color: var(--studio-color);
-  }
-}
-
-/* навігація */
-
-.main-nav,
-.header-list,
-.header-contacts,
-.header-link,
-.header-navigation {
+.header__container,
+.menu-list,
+.header__contacts,
+.menu-list__link,
+.header__navigation {
   display: flex;
 }
 
-.main-nav {
+.header__container {
   align-items: center;
   justify-content: space-between;
 }
 
-.header-list {
+.menu-list {
   margin-left: 94px
 }
 
-.header-item:not(:last-child) {
+.menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-contacts-link:hover,
-.header-contacts-link:focus,
-.header-link.current,
-.accent:hover,
-.accent-footer:hover,
-.accent:focus,
-.accent-footer:focus,
+.menu-list__link:hover,
+.menu-list__link:focus,
+.header__contacts-link:hover,
+.header__contacts-link:focus,
+.menu-list__link.current,
 .footer-mail:hover,
 .footer-mail:focus,
 .footer-tel:focus,
@@ -63,24 +38,19 @@
   color: var(--accent-color);
 }
 
-.header-contacts-link,
-.accent,
-.accent-footer,
+.header__contacts-link,
 .footer-mail,
 .footer-tel,
 .footer-address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link {
+.menu-list__link {
   position: relative;
   align-items: center;
   justify-content: center;
   color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 0.02em, 500);
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -102,7 +72,7 @@
   color: var(--primary-text-color);  
 }
 
-.header-contacts-icon {
+.header__contacts-icon {
   fill: currentColor;
   margin-right: 10px;
 }
