@@ -14,13 +14,12 @@
   line-height: 1.19;
 }
 
-.header-logo .accent {
-  color: var(--studio-color);
-}
-
 .header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
+  .accent {
+  color: var(--studio-color);
+  }
 }
 
 /* навігація */

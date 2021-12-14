@@ -3,20 +3,18 @@
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
-}
-
-.examples-list .title {
+  .title {
   color: var(--title-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-
-.examples-list .text {
+  }
+  .text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;  
+  }
 }
 
 .examples-text {
@@ -34,18 +32,14 @@
 
 .examples-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.examples-link:hover,
-.examples-link:focus {  
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus, &:hover {  
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-}
-
-.examples-link:hover .examples-overlay-text,
-.examples-link:focus .examples-overlay-text {
+  }
+  &:focus .examples-overlay-text, &:hover .examples-overlay-text {
   transform: translateY(0);
   opacity: 1; 
+  }
 }
 
 .examples-overlay {
