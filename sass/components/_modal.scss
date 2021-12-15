@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus, &:hover {
   fill: var(--accent-color);
   outline: currentColor;
@@ -144,6 +144,7 @@ margin-bottom: 10px;
 
 .modal-field-check {
   margin-bottom: 30px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check-text {
@@ -174,6 +175,10 @@ margin-bottom: 10px;
 
 .modal-check:focus:not(:checked) .modal-check-text {
   color: var(--accent-color);
+}
+
+.modal-check {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-check {
